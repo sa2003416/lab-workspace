@@ -21,16 +21,15 @@ Please **do not add or modify folders** outside the structure defined below.
 ---
 
 ### 2. `Final Exam/`
-- Contains your **Final Exam project submission**.  
-- Inside, you must include:
+- Contains the **Lab Final Exam**.  
   1. **Project Code** – complete and runnable.  
   2. **Testing Sheet (Word Document)** – screenshots of the final app.
 
 ---
 
-### 3. `Lab Practice/`
-- Contains all **weekly lab work**.  
-- For each lab, copy your weekly lab folder here, then continue working inside it.  
+### 3. `Lab Material/`
+- Contains all **weekly lab work posted by the instructor**.  
+- For each lab, copy the weekly lab folder from this repository to your repository, then continue working inside it.  
 - Example:  
   - `Lab Practice/Lab1/`  
   - `Lab Practice/Lab2/`
@@ -38,8 +37,7 @@ Please **do not add or modify folders** outside the structure defined below.
 ---
 
 ### 4. `Midterm Exam/`
-- Contains your **Midterm Exam project submission**.  
-- Requirements are the same as the Final Exam:  
+- Contains the **Midterm Exams**.   
   1. **Project Code**  
   2. **Testing Sheet (Word Document)**
 
@@ -48,19 +46,19 @@ Please **do not add or modify folders** outside the structure defined below.
 ## 🧹 Clean Folder Policy
 
 - **Do not create random folders or files** at the top level of the repository.  
-- Only the following folders should exist at the root level:  
+- Only the following folders should exist at the root level in your repo:  
   - `Assignments/`  
   - `Final Exam/`  
   - `Lab Practice/`  
   - `Midterm Exam/`  
 - All work must go into its correct folder.  
 
-Keeping a **clean architecture** ensures that your submissions are easy to review and that everyone follows the same structure.  
+Maintaining a **clean architecture** ensures that your submissions are easy to review and that everyone follows a consistent structure.  
 
 ---
 
 ## ✅ Summary
-- Respect the folder structure.  
+- Respect the folder structure of your repositories.  
 - Place your work in the correct folder.  
 - Include both **code** and a **testing sheet** for assignments, midterm, and final exam.  
 - Labs go into the `Lab Practice/` folder.  
