@@ -12,6 +12,8 @@ void sayHello(String name) {
   print('Hello $name');
 }
 
+var display = (n) => print(n);
+
 // named parameters
 int subNamed({required int a, int b = 0}) {
   return a - b;
