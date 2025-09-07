@@ -31,4 +31,13 @@ class Book {
       yearOfPublication: json["yearOfPublication"],
     );
   }
+
+  @override
+  String toString() {
+    return """"
+          Title : $name
+          author : $author
+          yearOfPublication : $yearOfPublication
+        """;
+  }
 }
