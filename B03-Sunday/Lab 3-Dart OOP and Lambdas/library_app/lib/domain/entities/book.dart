@@ -14,7 +14,13 @@ class Book {
     required this.yearOfPublication,
   });
 
-  // have  a way to change this object into json
+  factory Book.fromJSON(Map<String, dynamic> json) {
+    return Book(
+      name: json["name"],
+      author: json["author"],
+      yearOfPublication: json["yearOfPublication"],
+    );
+  }
 
   Map<String, dynamic> toJSON() {
     return {
@@ -22,14 +28,6 @@ class Book {
       "author": author,
       "yearOfPublication": yearOfPublication,
     };
-  }
-
-  factory Book.fromJSON(Map<String, dynamic> json) {
-    return Book(
-      name: json["name"],
-      author: json["author"],
-      yearOfPublication: json["yearOfPublication"],
-    );
   }
 
   @override

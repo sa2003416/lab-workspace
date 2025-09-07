@@ -1,8 +1,11 @@
+import 'package:library_app/core/utils/extentions.dart';
 import 'package:library_app/data/repositories/json_book_repo.dart';
 
 void main(List<String> args) {
   JsonBookRepo repo = JsonBookRepo();
-  print(repo.getBooks().join(''));
+  var books = repo.getBooks();
+
+  books.display();
 }
 
 // class Animal {}
