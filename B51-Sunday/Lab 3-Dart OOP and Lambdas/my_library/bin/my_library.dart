@@ -1,14 +1,17 @@
-import 'dart:math';
-
-import 'package:my_library/my_library.dart' as my_library;
+import 'package:my_library/core/utils/extentions.dart';
+import 'package:my_library/data/repositories/json_book_repo.dart';
+import 'package:my_library/domain/entities/book.dart';
 
 void main(List<String> arguments) {
-  print('Hello world: ${my_library.calculate()}!');
+  JsonBookRepo repo = JsonBookRepo();
 
-  List<int> numbers = [1, 2, 3, 4, 5, 6];
+  List<Book> books = repo.getBooks();
 
-  var mapped = numbers.map((n) => "-$n");
-  var mapped2 = numbers.map((n) => pow(n, 2));
-  print(mapped);
-  print(mapped2);
+  books.display;
+
+  var newBook = books.first;
+  repo.addBook(newBook);
+  repo.writeBooksToJSON();
+
+  print(books);
 }

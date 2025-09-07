@@ -17,13 +17,26 @@ class JsonBookRepo implements BookRepo {
   void readBooksFromJSON() {
     String fileName = 'assets/data/books.json';
     File file = File(fileName);
-
     String content = file.readAsStringSync();
 
     // convert the list
     List<dynamic> jsonBooks = jsonDecode(content);
-
     books = jsonBooks.map((json) => Book.fromJson(json)).toList();
+  }
+
+  void writeBooksToJSON() {
+    String fileName = 'assets/data/books.json';
+    File file = File(fileName);
+
+    // convert the list
+    List<dynamic> jsonBooks = books.map((book) => book.toJson()).toList();
+    String content = jsonEncode(jsonBooks);
+    file.writeAsStringSync(content);
+  }
+
+  @override
+  List<Book> getBooks() {
+    return books;
   }
 
   @override
@@ -34,11 +47,6 @@ class JsonBookRepo implements BookRepo {
   @override
   void deleteBook(String name) {
     // challenge
-  }
-
-  @override
-  List<Book> getBooks() {
-    return books;
   }
 
   @override
